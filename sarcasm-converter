@@ -1,0 +1,16 @@
+//Heres what you need to know when using this:
+//1. The only function you need to know is "convert()"".
+//2. Run the function by declaring "convert(Insert text here)". The code won't break even if you use unrecognizable characters.
+function convert(input_text) {
+  input_text = input_text.toLowerCase();
+  var unusablevariableduetoitslongassname = [];
+  for (var i = 0; i < input_text.length; i++) { unusablevariableduetoitslongassname[i] = input_text.slice(i, i + 1); }
+  for (var i = 0; i < unusablevariableduetoitslongassname.length; i++) {
+    if (Math.round(Math.random() + 1) === 2) { unusablevariableduetoitslongassname[i] = unusablevariableduetoitslongassname[i].toUpperCase(); }
+  }
+  input_text = "";
+  for (var i = 0; i < unusablevariableduetoitslongassname.length; i++) {
+    input_text = input_text + unusablevariableduetoitslongassname[i];
+  }
+  return input_text;
+}
